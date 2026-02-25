@@ -60,16 +60,22 @@ y = (Y + 1)/2 * (max - min) + min
 
 ---
 ### 檔案說明 (File Description)
-輸入檔名稱	         格式	  說明
-ANNSFM_Config_I	  文字檔	  資料正規化所需之輸入值範圍
-ANNSFM_Config_O	  文字檔	  資料正規化所需之輸出值範圍
-ANNSFM_Config_S	  文字檔	  三層網路結構及神經元個數 M、N、L
-ANNSFM_CS_HB	    文字檔	  隱藏層神經元之偏權值
-ANNSFM_CS_HW	    文字檔	  隱藏層神經元與輸入層之權重連結
-ANNSFM_CS_OB	    文字檔	  輸出層神經元之偏權值 
-ANNSFM_CS_OW	    文字檔	  輸出層神經元與隱藏層之權重連結
-ANNSFM_data_size	文字檔	  資料筆數P
-ANNSFM_inputs	    文字檔	  模式之輸入 (氣象局之資料)
-輸出檔名稱	        格式	  說明
-ANNSFM_outputs	  文字檔	  模式之輸出 (讀入氣象局資料後輸出一小時之預測)
----
+輸入檔案 (Input Files)
+| 檔案名稱               | 格式         | 說明                                       |
+| ------------------ | ---------- | ---------------------------------------- |
+| `ANNSFM_Config_I`  | 文字檔 (.txt) | 資料正規化所需之**輸入值範圍**                        |
+| `ANNSFM_Config_O`  | 文字檔 (.txt) | 資料正規化所需之**輸出值範圍**                        |
+| `ANNSFM_Config_S`  | 文字檔 (.txt) | 三層網路結構與神經元個數設定（M, N, L）                  |
+| `ANNSFM_CS_HB`     | 文字檔 (.txt) | 隱藏層神經元之偏權值（Hidden Bias）                  |
+| `ANNSFM_CS_HW`     | 文字檔 (.txt) | 輸入層 → 隱藏層 之權重連結（Input → Hidden Weights）  |
+| `ANNSFM_CS_OB`     | 文字檔 (.txt) | 輸出層神經元之偏權值（Output Bias）                  |
+| `ANNSFM_CS_OW`     | 文字檔 (.txt) | 隱藏層 → 輸出層 之權重連結（Hidden → Output Weights） |
+| `ANNSFM_data_size` | 文字檔 (.txt) | 資料筆數 P                                   |
+| `ANNSFM_inputs`    | 文字檔 (.txt) | 模型輸入資料（中央氣象署 / 氣象局資料）                    |
+
+輸出檔案 (Output Files)
+| 檔案名稱             | 格式         | 說明                            |
+| ---------------- | ---------- | ----------------------------- |
+| `ANNSFM_outputs` | 文字檔 (.txt) | 模型輸出結果（讀入氣象資料後，**預測未來一小時數值**） |
+
+
