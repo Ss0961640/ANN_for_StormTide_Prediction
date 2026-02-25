@@ -1,10 +1,7 @@
 # ANN for Storm Tide Prediction (C++ Implementation)
 以 C++ 實作三層前饋式類神經網路（ANN），進行近海暴潮（Storm Tide）之潮位趨勢預測。
 
-> Application of Artificial Intelligence Model in Offshore Storm Surge Prediction  
-> 國立臺灣海洋大學｜海洋環境資訊系 C++ 期末專題
 
----
 
 ## 專案簡介 (Overview)
 本專案以 **C++ 自行實作 ANN（Artificial Neural Network）模型**，  
@@ -59,3 +56,19 @@ f(x) = 2/(1 + e^(-2x)) - 1
 Ol = wO(l,n) * Hn + bO(l)
 Inverse normalization:
 y = (Y + 1)/2 * (max - min) + min
+
+
+### 檔案說明 (File Description)
+輸入檔名稱	         格式	  說明
+ANNSFM_Config_I	  文字檔	  資料正規化所需之輸入值範圍
+ANNSFM_Config_O	  文字檔	  資料正規化所需之輸出值範圍
+ANNSFM_Config_S	  文字檔	  三層網路結構及神經元個數 M、N、L
+ANNSFM_CS_HB	    文字檔	  隱藏層神經元之偏權值
+ANNSFM_CS_HW	    文字檔	  隱藏層神經元與輸入層之權重連結
+ANNSFM_CS_OB	    文字檔	  輸出層神經元之偏權值 
+ANNSFM_CS_OW	    文字檔	  輸出層神經元與隱藏層之權重連結
+ANNSFM_data_size	文字檔	  資料筆數P
+ANNSFM_inputs	    文字檔	  模式之輸入 (氣象局之資料)
+輸出檔名稱	        格式	  說明
+ANNSFM_outputs	  文字檔	  模式之輸出 (讀入氣象局資料後輸出一小時之預測)
+
