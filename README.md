@@ -58,6 +58,7 @@ Inverse normalization:
 y = (Y + 1)/2 * (max - min) + min
 
 
+---
 ### 檔案說明 (File Description)
 輸入檔名稱	         格式	  說明
 ANNSFM_Config_I	  文字檔	  資料正規化所需之輸入值範圍
@@ -71,4 +72,4 @@ ANNSFM_data_size	文字檔	  資料筆數P
 ANNSFM_inputs	    文字檔	  模式之輸入 (氣象局之資料)
 輸出檔名稱	        格式	  說明
 ANNSFM_outputs	  文字檔	  模式之輸出 (讀入氣象局資料後輸出一小時之預測)
-
+---
