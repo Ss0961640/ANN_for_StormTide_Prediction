@@ -1,22 +1,61 @@
-# ANN_for_StormTide_Prediction
-受氣候暖化變遷的影響，我們面臨許多海洋環境與海岸災害的議
-題，例如：超級颱風引起的暴潮溢淹對人類的生存與經濟發展帶來莫大
-的衝擊。簡單來說，就是間接影響沿海地區人類活動、經濟產物等…情
-形，基於自然災害而改變潮汐既有的週期規律，當海水大量湧入海岸線
-超過原先高潮線稱為暴潮。隨著全球學者數十年來不遺餘力，期能詳盡
-瞭解暴潮之成因、掌握其特性及更準確有效率地預測颱風暴潮，目的是
-熟悉深度學習之應用在實際案例的整合跨域學習。由於本研究目的在於
-通過深度學習之類神經網絡來預測近海暴潮預測之應用。因此，影響狀
-況與迫害程度並不是本次研究探討之議題。
+# ANN for Storm Tide Prediction (C++ Implementation)
+以 C++ 實作三層前饋式類神經網路（ANN），進行近海暴潮（Storm Tide）之潮位趨勢預測。
 
-究透過類神經網絡基於三層前饋式類神經網路(架構及權重)
-概念，藉此建立ANN架構、相關之權重(矩陣)及讀取輸入之資料(矩陣)
-方法中，將蒐集的潮汐資料依序通過Input Layer、Hidden Layer、Output 
-Layer 計算流程取得輸出結果，以折線圖形式來呈現潮汐變化之趨勢，依
-據這項結果的觀察來預測暴潮未來可能發生之影響情形。
+> Application of Artificial Intelligence Model in Offshore Storm Surge Prediction  
+> 國立臺灣海洋大學｜海洋環境資訊系 C++ 期末專題
 
-<img width="505" height="331" alt="螢幕擷取畫面 2026-02-25 222359" src="https://github.com/user-attachments/assets/14a3bcac-8600-4b48-bb09-d643713838ea" />
+---
 
-三層之計算流程:<img width="521" height="290" alt="螢幕擷取畫面 2026-02-25 222511" src="https://github.com/user-attachments/assets/2c4a7d5d-44b4-47b9-8034-d6842402167c" />
+## 專案簡介 (Overview)
+本專案以 **C++ 自行實作 ANN（Artificial Neural Network）模型**，  
+透過潮汐歷史資料建立三層前饋式神經網路（Input → Hidden → Output），  
+進行近海暴潮（Storm Tide）之潮位變化趨勢預測，作為海洋災害風險評估之前端模型展示。
 
-結果<img width="548" height="441" alt="螢幕擷取畫面 2026-02-25 222703" src="https://github.com/user-attachments/assets/8ba8e837-fb6e-47a7-b865-755d34af2517" />
+本研究重點在於：
+- AI 模型於實際海洋資料之應用
+- ANN 結構設計與矩陣運算實作
+- 模型輸出結果視覺化（潮位折線圖）
+
+> 本專案聚焦於模型與預測流程，不探討災害影響評估與風險決策層面。
+
+---
+
+## 研究目標 (Objective)
+- 建立三層前饋式 ANN 架構（Input / Hidden / Output）
+- 使用 C++ 實作權重矩陣、偏差與前向傳播計算
+- 將潮汐資料正規化後輸入模型進行預測
+- 視覺化預測結果觀察暴潮趨勢
+
+---
+
+## 模型架構 (Model Architecture)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14a3bcac-8600-4b48-bb09-d643713838ea" width="600">
+</p>
+
+- Input Layer：潮汐相關特徵  
+- Hidden Layer：非線性映射  
+- Output Layer：預測潮位值  
+
+---
+
+## ANN 計算流程 (Forward Propagation)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c4a7d5d-44b4-47b9-8034-d6842402167c" width="600">
+</p>
+
+### Input Layer
+1. Read data
+2. Normalization: x → [-1, 1]
+   X = 2*(x - min)/(max - min) - 1
+
+### Hidden Layer
+Hn = f( wH(n,m) * Im + bH(n) )
+f(x) = 2/(1 + e^(-2x)) - 1
+
+### Output Layer
+Ol = wO(l,n) * Hn + bO(l)
+Inverse normalization:
+y = (Y + 1)/2 * (max - min) + min
