@@ -13,11 +13,10 @@
 概念，藉此建立ANN架構、相關之權重(矩陣)及讀取輸入之資料(矩陣)
 方法中，將蒐集的潮汐資料依序通過Input Layer、Hidden Layer、Output 
 Layer 計算流程取得輸出結果，以折線圖形式來呈現潮汐變化之趨勢，依
-據這項結果的觀察來預測暴潮未來可能發生之影響情形。 
+據這項結果的觀察來預測暴潮未來可能發生之影響情形。
+
 <img width="505" height="331" alt="螢幕擷取畫面 2026-02-25 222359" src="https://github.com/user-attachments/assets/14a3bcac-8600-4b48-bb09-d643713838ea" />
 
-三層之計算流程:
-<img width="521" height="290" alt="螢幕擷取畫面 2026-02-25 222511" src="https://github.com/user-attachments/assets/2c4a7d5d-44b4-47b9-8034-d6842402167c" />
+三層之計算流程:<img width="521" height="290" alt="螢幕擷取畫面 2026-02-25 222511" src="https://github.com/user-attachments/assets/2c4a7d5d-44b4-47b9-8034-d6842402167c" />
 
-結果
-<img width="548" height="441" alt="螢幕擷取畫面 2026-02-25 222703" src="https://github.com/user-attachments/assets/8ba8e837-fb6e-47a7-b865-755d34af2517" />
+結果<img width="548" height="441" alt="螢幕擷取畫面 2026-02-25 222703" src="https://github.com/user-attachments/assets/8ba8e837-fb6e-47a7-b865-755d34af2517" />
