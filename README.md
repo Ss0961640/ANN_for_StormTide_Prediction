@@ -39,7 +39,8 @@
 
 註：網路結構（M, N, L）由 `ANNSFM_Config_S` 控制，便於調整神經元數量與輸入/輸出維度。
 
-![Model Architecture](./figures/model_architecture.png)
+<img width="507" height="341" alt="螢幕擷取畫面 2026-02-26 163425" src="https://github.com/user-attachments/assets/a8336434-942b-4253-8623-65b92bb9692f" />
+
 
 ---
 
@@ -47,7 +48,8 @@
 
 本專案採用「正規化 → 隱藏層非線性映射 → 線性輸出 → 反正規化」流程。
 
-![Forward Propagation](./figures/forward_propagation.png)
+<img width="507" height="341" alt="螢幕擷取畫面 2026-02-26 163425" src="https://github.com/user-attachments/assets/c4c4ef9c-430b-4c44-ae13-3993772fde24" />
+
 
 ### Input Layer（Normalization）
 
