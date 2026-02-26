@@ -44,8 +44,8 @@
 </p>
 
 ### Input Layer
-1. Read data
-2. Normalization: x → [-1, 1]
+Read data
+Normalization: x → [-1, 1]
    X = 2*(x - min)/(max - min) - 1
 
 ### Hidden Layer
