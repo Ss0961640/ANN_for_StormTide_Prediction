@@ -39,7 +39,8 @@
 
 註：網路結構（M, N, L）由 `ANNSFM_Config_S` 控制，便於調整神經元數量與輸入/輸出維度。
 
-<img width="507" height="341" alt="螢幕擷取畫面 2026-02-26 163425" src="https://github.com/user-attachments/assets/a8336434-942b-4253-8623-65b92bb9692f" />
+<img width="512" height="331" alt="螢幕擷取畫面 2026-02-26 163224" src="https://github.com/user-attachments/assets/874453c2-d2d3-43b6-9665-4c1e6337c29a" />
+
 
 
 ---
