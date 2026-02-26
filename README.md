@@ -44,7 +44,6 @@
 </p>
 
 ### Input Layer
-Read data
 Normalization: x → [-1, 1]
    X = 2*(x - min)/(max - min) - 1
 
