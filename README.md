@@ -31,6 +31,9 @@
 
 ## 模型架構（Model Architecture）
 
+<img width="512" height="331" alt="螢幕擷取畫面 2026-02-26 163224" src="https://github.com/user-attachments/assets/18f1fa2d-4a73-44ed-84bf-f89914fd8897" />
+
+
 三層前饋式網路（Input → Hidden → Output）：
 
 - Input Layer（M 維）：潮位相關輸入特徵（例如當前/歷史潮位、時間窗特徵等）  
@@ -38,9 +41,6 @@
 - Output Layer（L 維）：輸出預測潮位（本專案常見為 1 維，即單步潮位值）  
 
 註：網路結構（M, N, L）由 `ANNSFM_Config_S` 控制，便於調整神經元數量與輸入/輸出維度。
-
-<img width="512" height="331" alt="螢幕擷取畫面 2026-02-26 163224" src="https://github.com/user-attachments/assets/874453c2-d2d3-43b6-9665-4c1e6337c29a" />
-
 
 
 ---
