@@ -133,7 +133,9 @@ y = (Y + 1) / 2 * (max - min) + min
 
 ---
 
-## 作者與用途（Author & Purpose）
+## 聯絡作者
 
-Author: Raymond Yang  
-Purpose: Graduate Project / Portfolio / GitHub Showcase
+GitHub: https://github.com/RaymondYang
+
+Email: Ss0961640@gmail.com
+
