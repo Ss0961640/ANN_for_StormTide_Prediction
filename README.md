@@ -1,5 +1,5 @@
 # ANN for Storm Tide Prediction (C++ Implementation)
-以 C++ 實作三層前饋式類神經網路（ANN），進行近海暴潮（Storm Tide）之潮位趨勢預測。
+以三層前饋式類神經網路（ANN），進行近海暴潮（Storm Tide）之潮位趨勢預測。
 
 
 
@@ -19,7 +19,7 @@
 
 ## 研究目標 (Objective)
 - 建立三層前饋式 ANN 架構（Input / Hidden / Output）
-- 使用 C++ 實作權重矩陣、偏差與前向傳播計算
+- 基於權重矩陣、偏差與前向傳播計算
 - 將潮汐資料正規化後輸入模型進行預測
 - 視覺化預測結果觀察暴潮趨勢
 
