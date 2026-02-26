@@ -1,4 +1,10 @@
 # 人工智慧模式於近海暴潮預測之應用
+![](https://img.shields.io/badge/Task-Storm%20Tide%20Prediction-blue)
+![](https://img.shields.io/badge/Model-ANN%20(Feedforward)-orange)
+![](https://img.shields.io/badge/Language-C%2B%2B-yellow)
+![](https://img.shields.io/badge/Type-Time%20Series-informational)
+![](https://img.shields.io/badge/Level-From%20Scratch-success)
+![](https://img.shields.io/badge/AI-Ready-brightgreen)
 
 本專案以 **C++ 從零實作三層前饋式類神經網路（ANN, Feedforward Neural Network）**，用於近海暴潮（Storm Tide）之潮位趨勢預測。  
 核心重點在於：**不依賴現成深度學習框架**，以工程化方式完成資料正規化、矩陣運算、前向傳播推論與輸出反正規化，並將預測結果以時間序列形式輸出，作為海洋災害預警/風險評估的前端模型展示。
