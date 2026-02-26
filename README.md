@@ -19,7 +19,7 @@
 
 ---
 
-## 研究目標（Objective）
+## 目標（Objective）
 
 - 建立三層前饋式 ANN 架構（Input / Hidden / Output），用於潮位時間序列預測  
 - 以 C++ 實作矩陣乘法與向量運算，完成前向推論流程  
